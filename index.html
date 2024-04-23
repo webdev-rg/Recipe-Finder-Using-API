@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipe Finder</h1>
+
+      <form class="recipe-search">
+        <div class="input-field">
+          <input
+            type="text"
+            name="search-recipe"
+            id="search-recipe"
+            placeholder="Search Recipe"
+          />
+        </div>
+        <div class="search-btn">
+          <input type="submit" value="Search" id="search-recipe-btn" />
+        </div>
+      </form>
+
+      <div class="result-count">
+        <span></span>
+      </div>
+
+      <div class="recipe-container"></div>
+    </div>
+
+    <!-- JS FILE -->
+    <script src="./script.js"></script>
+  </body>
+</html>

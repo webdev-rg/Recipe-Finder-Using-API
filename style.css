@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #0052d4;
+  --secondary-color: #6fb1fc;
+  --white: #fff;
+  --text-color: #1d2834;
+  --text-color-2: #2c3e50;
+  --bg-color: #f2f2f2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.container h1 {
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.container .recipe-search {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.recipe-search .input-field {
+  width: 30rem;
+  height: 4.5rem;
+}
+.input-field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: var(--white);
+  border: 1px solid #999;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: 0;
+}
+
+.recipe-search .search-btn {
+  width: 15rem;
+  height: 4.5rem;
+}
+.search-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border: 0;
+  outline: 0;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.container .result-count {
+  width: 100%;
+  text-align: left;
+  padding: 0 2rem;
+}
+.result-count span {
+  display: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color-2);
+}
+
+.container .recipe-container {
+  width: 100%;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem;
+}
+.recipe-container .recipe-content {
+  width: auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.recipe-content .recipe-img {
+  width: 100%;
+  height: 28rem;
+}
+.recipe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.recipe-content .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.recipe-content .ingredients-list {
+  width: 100%;
+  text-align: left;
+}
+.ingredients-list li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color-2);
+  line-height: 1.5;
+}
+
+.recipe-content .view-recipe {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  text-align: center;
+  line-height: 4.5rem;
+  background-color: var(--primary-color);
+  border-radius: 1.2rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+}
